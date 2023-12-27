@@ -1,0 +1,1 @@
+enum SelectedUsersType { user, guest }

@@ -1,0 +1,4 @@
+enum SelectedFinancialType{
+  payment,
+  income
+}
