@@ -1,0 +1,682 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.spotx.customer"
+4    android:versionCode="34"
+5    android:versionName="1.0.34" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="33" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:6:5-66
+14-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:6:22-64
+15    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+15-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:11:5-74
+15-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:11:22-72
+16
+17    <queries>
+17-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:3:5-5:15
+18        <package android:name="com.whatsapp" />
+18-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:4:9-48
+18-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:4:18-45
+19        <!-- Needs to be explicitly declared on Android R+ -->
+20        <package android:name="com.google.android.apps.maps" />
+20-->[com.google.android.gms:play-services-maps:18.1.0] /Users/hazemdarwish/.gradle/caches/transforms-3/218d849205ad82a107818267ff7bc258/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:33:9-64
+20-->[com.google.android.gms:play-services-maps:18.1.0] /Users/hazemdarwish/.gradle/caches/transforms-3/218d849205ad82a107818267ff7bc258/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:33:18-61
+21    </queries>
+22
+23    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+23-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:7:5-78
+23-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:7:22-76
+24    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA" />
+24-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:8:5-105
+24-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:8:22-103
+25    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+25-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:9:5-80
+25-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:9:22-78
+26    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+26-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:10:5-78
+26-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:10:22-76
+27    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Permissions options for the `notification` group -->
+27-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-68
+27-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-65
+28    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+28-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-77
+28-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:13:22-74
+29    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+29-->[:flutter_local_notifications] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-81
+29-->[:flutter_local_notifications] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-78
+30    <uses-permission android:name="android.permission.VIBRATE" />
+30-->[:flutter_local_notifications] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-66
+30-->[:flutter_local_notifications] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-63
+31    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+31-->[:flutter_local_notifications] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-81
+31-->[:flutter_local_notifications] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-78
+32    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+32-->[:flutter_local_notifications] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-79
+32-->[:flutter_local_notifications] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:22-76
+33    <uses-permission
+33-->[:open_filex] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-12:38
+34        android:name="android.permission.READ_EXTERNAL_STORAGE"
+34-->[:open_filex] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:11:9-64
+35        android:maxSdkVersion="32" />
+35-->[:open_filex] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-35
+36    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+36-->[:open_filex] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-76
+36-->[:open_filex] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:13:22-73
+37    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+37-->[:open_filex] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:14:5-75
+37-->[:open_filex] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:14:22-72
+38    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+38-->[:open_filex] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:15:5-75
+38-->[:open_filex] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:15:22-72
+39
+40    <uses-feature
+40-->[com.google.android.gms:play-services-maps:18.1.0] /Users/hazemdarwish/.gradle/caches/transforms-3/218d849205ad82a107818267ff7bc258/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:26:5-28:35
+41        android:glEsVersion="0x00020000"
+41-->[com.google.android.gms:play-services-maps:18.1.0] /Users/hazemdarwish/.gradle/caches/transforms-3/218d849205ad82a107818267ff7bc258/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:27:9-41
+42        android:required="true" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+42-->[com.google.android.gms:play-services-maps:18.1.0] /Users/hazemdarwish/.gradle/caches/transforms-3/218d849205ad82a107818267ff7bc258/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:28:9-32
+43    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+43-->[com.google.firebase:firebase-messaging:23.2.0] /Users/hazemdarwish/.gradle/caches/transforms-3/8acb8e549b943784e2f6f2617d666ca1/transformed/jetified-firebase-messaging-23.2.0/AndroidManifest.xml:28:5-82
+43-->[com.google.firebase:firebase-messaging:23.2.0] /Users/hazemdarwish/.gradle/caches/transforms-3/8acb8e549b943784e2f6f2617d666ca1/transformed/jetified-firebase-messaging-23.2.0/AndroidManifest.xml:28:22-79
+44    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+44-->[com.google.android.gms:play-services-measurement-api:21.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/8848e78cc6c4e2b4deefd5ef5a509fa1/transformed/jetified-play-services-measurement-api-21.3.0/AndroidManifest.xml:25:5-79
+44-->[com.google.android.gms:play-services-measurement-api:21.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/8848e78cc6c4e2b4deefd5ef5a509fa1/transformed/jetified-play-services-measurement-api-21.3.0/AndroidManifest.xml:25:22-76
+45    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+45-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/2fd07490b971207c05bddfea458ab763/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:26:5-110
+45-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/2fd07490b971207c05bddfea458ab763/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:26:22-107
+46
+47    <permission
+47-->[androidx.core:core:1.10.1] /Users/hazemdarwish/.gradle/caches/transforms-3/1ca1f77c6bbebc008cd483578e872444/transformed/core-1.10.1/AndroidManifest.xml:22:5-24:47
+48        android:name="com.spotx.customer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+48-->[androidx.core:core:1.10.1] /Users/hazemdarwish/.gradle/caches/transforms-3/1ca1f77c6bbebc008cd483578e872444/transformed/core-1.10.1/AndroidManifest.xml:23:9-81
+49        android:protectionLevel="signature" />
+49-->[androidx.core:core:1.10.1] /Users/hazemdarwish/.gradle/caches/transforms-3/1ca1f77c6bbebc008cd483578e872444/transformed/core-1.10.1/AndroidManifest.xml:24:9-44
+50
+51    <uses-permission android:name="com.spotx.customer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+51-->[androidx.core:core:1.10.1] /Users/hazemdarwish/.gradle/caches/transforms-3/1ca1f77c6bbebc008cd483578e872444/transformed/core-1.10.1/AndroidManifest.xml:26:5-97
+51-->[androidx.core:core:1.10.1] /Users/hazemdarwish/.gradle/caches/transforms-3/1ca1f77c6bbebc008cd483578e872444/transformed/core-1.10.1/AndroidManifest.xml:26:22-94
+52
+53    <application
+53-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:12:5-64:19
+54        android:allowBackup="false"
+54-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:14:9-36
+55        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+55-->[androidx.core:core:1.10.1] /Users/hazemdarwish/.gradle/caches/transforms-3/1ca1f77c6bbebc008cd483578e872444/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
+56        android:debuggable="true"
+57        android:extractNativeLibs="false"
+58        android:icon="@mipmap/launcher_icon"
+58-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:16:9-45
+59        android:label="SpotX"
+59-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:13:9-30
+60        android:roundIcon="@mipmap/ic_launcher_round" >
+60-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:15:9-54
+61        <meta-data
+61-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:17:8-18:69
+62            android:name="com.google.android.geo.API_KEY"
+62-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:17:19-64
+63            android:value="AIzaSyBM6oDJmN4CA3NbENg1IMDlK2KinpZOuLI" />
+63-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:18:12-67
+64
+65        <activity
+65-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:19:9-57:20
+66            android:name="com.spotx.customer.MainActivity"
+66-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:20:13-41
+67            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+67-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:24:13-163
+68            android:exported="true"
+68-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:22:13-36
+69            android:hardwareAccelerated="true"
+69-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:25:13-47
+70            android:launchMode="singleTop"
+70-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:21:13-43
+71            android:theme="@style/LaunchTheme"
+71-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:23:13-47
+72            android:windowSoftInputMode="adjustResize" >
+72-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:26:13-55
+73
+74            <!--
+75                 Specifies an Android theme to apply to this Activity as soon as
+76                 the Android process has started. This theme is visible to the user
+77                 while the Flutter UI initializes. After that, this theme continues
+78                 to determine the Window background behind the Flutter UI.
+79            -->
+80            <meta-data
+80-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:31:13-34:17
+81                android:name="io.flutter.embedding.android.NormalTheme"
+81-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:32:15-70
+82                android:resource="@style/NormalTheme" />
+82-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:33:15-52
+83            <!--
+84                 Displays an Android View that continues showing the launch screen
+85                 Drawable until Flutter paints its first frame, then this splash
+86                 screen fades out. A splash screen is useful to avoid any visual
+87                 gap between the end of Android's launch screen and the painting of
+88                 Flutter's first frame.
+89            -->
+90            <meta-data
+90-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:40:13-43:17
+91                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+91-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:41:15-79
+92                android:resource="@drawable/launch_background" />
+92-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:42:15-61
+93
+94            <intent-filter>
+94-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:44:13-47:29
+95                <action android:name="android.intent.action.MAIN" />
+95-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:45:17-68
+95-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:45:25-66
+96
+97                <category android:name="android.intent.category.LAUNCHER" />
+97-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:46:17-76
+97-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:46:27-74
+98            </intent-filter>
+99            <!-- Deep linking -->
+100            <meta-data
+100-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:49:13-90
+101                android:name="flutter_deeplinking_enabled"
+101-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:49:24-66
+102                android:value="true" />
+102-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:49:67-87
+103
+104            <intent-filter android:autoVerify="true" >
+104-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:50:13-56:29
+104-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:50:28-53
+105                <action android:name="android.intent.action.VIEW" />
+105-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:51:17-69
+105-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:51:25-66
+106
+107                <category android:name="android.intent.category.DEFAULT" />
+107-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:52:17-76
+107-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:52:27-73
+108                <category android:name="android.intent.category.BROWSABLE" />
+108-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:53:17-78
+108-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:53:27-75
+109
+110                <data
+110-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:54:17-86
+111                    android:host="https://spotx.page.link"
+111-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:54:45-83
+112                    android:scheme="http" />
+112-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:54:23-44
+113                <data android:scheme="https" />
+113-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:54:17-86
+113-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:54:23-44
+114            </intent-filter>
+115        </activity>
+116        <!--
+117             Don't delete the meta-data below.
+118             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+119        -->
+120        <meta-data
+120-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:60:9-62:33
+121            android:name="flutterEmbedding"
+121-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:61:13-44
+122            android:value="2" />
+122-->/Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/android/app/src/main/AndroidManifest.xml:62:13-30
+123
+124        <service
+124-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-19:72
+125            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+125-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-107
+126            android:exported="false"
+126-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
+127            android:permission="android.permission.BIND_JOB_SERVICE" />
+127-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-69
+128        <service
+128-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:20:9-26:19
+129            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+129-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-97
+130            android:exported="false" >
+130-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-37
+131            <intent-filter>
+131-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-25:29
+132                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+132-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:17-78
+132-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:25-75
+133            </intent-filter>
+134        </service>
+135
+136        <receiver
+136-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:28:9-35:20
+137            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+137-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-98
+138            android:exported="true"
+138-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-36
+139            android:permission="com.google.android.c2dm.permission.SEND" >
+139-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:31:13-73
+140            <intent-filter>
+140-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:32:13-34:29
+141                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+141-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:17-81
+141-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:25-78
+142            </intent-filter>
+143        </receiver>
+144
+145        <service
+145-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:37:9-41:19
+146            android:name="com.google.firebase.components.ComponentDiscoveryService"
+146-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:37:18-89
+147            android:directBootAware="true"
+147-->[com.google.firebase:firebase-common:20.3.3] /Users/hazemdarwish/.gradle/caches/transforms-3/0b80c6f5e8782930c2fbfdf393edc96d/transformed/jetified-firebase-common-20.3.3/AndroidManifest.xml:34:13-43
+148            android:exported="false" >
+148-->[com.google.firebase:firebase-crashlytics:18.4.0] /Users/hazemdarwish/.gradle/caches/transforms-3/41663afc6a08ef0cef8bd858fd07e8b3/transformed/jetified-firebase-crashlytics-18.4.0/AndroidManifest.xml:16:13-37
+149            <meta-data
+149-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-40:85
+150                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+150-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:39:17-128
+151                android:value="com.google.firebase.components.ComponentRegistrar" />
+151-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:40:17-82
+152            <meta-data
+152-->[:firebase_crashlytics] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+153                android:name="com.google.firebase.components:io.flutter.plugins.firebase.crashlytics.FlutterFirebaseAppRegistrar"
+153-->[:firebase_crashlytics] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-130
+154                android:value="com.google.firebase.components.ComponentRegistrar" />
+154-->[:firebase_crashlytics] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+155            <meta-data
+155-->[:firebase_dynamic_links] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-15:85
+156                android:name="com.google.firebase.components:io.flutter.plugins.firebase.dynamiclinks.FlutterFirebaseAppRegistrar"
+156-->[:firebase_dynamic_links] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:14:17-131
+157                android:value="com.google.firebase.components.ComponentRegistrar" />
+157-->[:firebase_dynamic_links] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:15:17-82
+158            <meta-data
+158-->[:firebase_analytics] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:85
+159                android:name="com.google.firebase.components:io.flutter.plugins.firebase.analytics.FlutterFirebaseAppRegistrar"
+159-->[:firebase_analytics] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-128
+160                android:value="com.google.firebase.components.ComponentRegistrar" />
+160-->[:firebase_analytics] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-82
+161            <meta-data
+161-->[:firebase_core] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+162                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+162-->[:firebase_core] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
+163                android:value="com.google.firebase.components.ComponentRegistrar" />
+163-->[:firebase_core] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+164            <meta-data
+164-->[com.google.firebase:firebase-crashlytics:18.4.0] /Users/hazemdarwish/.gradle/caches/transforms-3/41663afc6a08ef0cef8bd858fd07e8b3/transformed/jetified-firebase-crashlytics-18.4.0/AndroidManifest.xml:17:13-19:85
+165                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+165-->[com.google.firebase:firebase-crashlytics:18.4.0] /Users/hazemdarwish/.gradle/caches/transforms-3/41663afc6a08ef0cef8bd858fd07e8b3/transformed/jetified-firebase-crashlytics-18.4.0/AndroidManifest.xml:18:17-115
+166                android:value="com.google.firebase.components.ComponentRegistrar" />
+166-->[com.google.firebase:firebase-crashlytics:18.4.0] /Users/hazemdarwish/.gradle/caches/transforms-3/41663afc6a08ef0cef8bd858fd07e8b3/transformed/jetified-firebase-crashlytics-18.4.0/AndroidManifest.xml:19:17-82
+167            <meta-data
+167-->[com.google.firebase:firebase-sessions:1.0.0] /Users/hazemdarwish/.gradle/caches/transforms-3/0af27fd506d654924b5a2118d102095e/transformed/jetified-firebase-sessions-1.0.0/AndroidManifest.xml:27:13-29:85
+168                android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar"
+168-->[com.google.firebase:firebase-sessions:1.0.0] /Users/hazemdarwish/.gradle/caches/transforms-3/0af27fd506d654924b5a2118d102095e/transformed/jetified-firebase-sessions-1.0.0/AndroidManifest.xml:28:17-117
+169                android:value="com.google.firebase.components.ComponentRegistrar" />
+169-->[com.google.firebase:firebase-sessions:1.0.0] /Users/hazemdarwish/.gradle/caches/transforms-3/0af27fd506d654924b5a2118d102095e/transformed/jetified-firebase-sessions-1.0.0/AndroidManifest.xml:29:17-82
+170            <meta-data
+170-->[com.google.firebase:firebase-messaging:23.2.0] /Users/hazemdarwish/.gradle/caches/transforms-3/8acb8e549b943784e2f6f2617d666ca1/transformed/jetified-firebase-messaging-23.2.0/AndroidManifest.xml:55:13-57:85
+171                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+171-->[com.google.firebase:firebase-messaging:23.2.0] /Users/hazemdarwish/.gradle/caches/transforms-3/8acb8e549b943784e2f6f2617d666ca1/transformed/jetified-firebase-messaging-23.2.0/AndroidManifest.xml:56:17-119
+172                android:value="com.google.firebase.components.ComponentRegistrar" />
+172-->[com.google.firebase:firebase-messaging:23.2.0] /Users/hazemdarwish/.gradle/caches/transforms-3/8acb8e549b943784e2f6f2617d666ca1/transformed/jetified-firebase-messaging-23.2.0/AndroidManifest.xml:57:17-82
+173            <meta-data
+173-->[com.google.firebase:firebase-dynamic-links:21.1.0] /Users/hazemdarwish/.gradle/caches/transforms-3/2b4cbdce6a58e3c7ed4be8f5555afdcb/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:26:13-28:85
+174                android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar"
+174-->[com.google.firebase:firebase-dynamic-links:21.1.0] /Users/hazemdarwish/.gradle/caches/transforms-3/2b4cbdce6a58e3c7ed4be8f5555afdcb/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:27:17-133
+175                android:value="com.google.firebase.components.ComponentRegistrar" />
+175-->[com.google.firebase:firebase-dynamic-links:21.1.0] /Users/hazemdarwish/.gradle/caches/transforms-3/2b4cbdce6a58e3c7ed4be8f5555afdcb/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:28:17-82
+176            <meta-data
+176-->[com.google.firebase:firebase-iid:21.1.0] /Users/hazemdarwish/.gradle/caches/transforms-3/66f7ece3fe7f86ac16029fb490a42c86/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:32:13-34:85
+177                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+177-->[com.google.firebase:firebase-iid:21.1.0] /Users/hazemdarwish/.gradle/caches/transforms-3/66f7ece3fe7f86ac16029fb490a42c86/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:33:17-96
+178                android:value="com.google.firebase.components.ComponentRegistrar" />
+178-->[com.google.firebase:firebase-iid:21.1.0] /Users/hazemdarwish/.gradle/caches/transforms-3/66f7ece3fe7f86ac16029fb490a42c86/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:34:17-82
+179            <meta-data
+179-->[com.google.android.gms:play-services-measurement-api:21.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/8848e78cc6c4e2b4deefd5ef5a509fa1/transformed/jetified-play-services-measurement-api-21.3.0/AndroidManifest.xml:31:13-33:85
+180                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+180-->[com.google.android.gms:play-services-measurement-api:21.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/8848e78cc6c4e2b4deefd5ef5a509fa1/transformed/jetified-play-services-measurement-api-21.3.0/AndroidManifest.xml:32:17-139
+181                android:value="com.google.firebase.components.ComponentRegistrar" />
+181-->[com.google.android.gms:play-services-measurement-api:21.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/8848e78cc6c4e2b4deefd5ef5a509fa1/transformed/jetified-play-services-measurement-api-21.3.0/AndroidManifest.xml:33:17-82
+182            <meta-data
+182-->[com.google.firebase:firebase-installations:17.1.3] /Users/hazemdarwish/.gradle/caches/transforms-3/8d961915ee714a2b94439d1510fc4d93/transformed/jetified-firebase-installations-17.1.3/AndroidManifest.xml:17:13-19:85
+183                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+183-->[com.google.firebase:firebase-installations:17.1.3] /Users/hazemdarwish/.gradle/caches/transforms-3/8d961915ee714a2b94439d1510fc4d93/transformed/jetified-firebase-installations-17.1.3/AndroidManifest.xml:18:17-127
+184                android:value="com.google.firebase.components.ComponentRegistrar" />
+184-->[com.google.firebase:firebase-installations:17.1.3] /Users/hazemdarwish/.gradle/caches/transforms-3/8d961915ee714a2b94439d1510fc4d93/transformed/jetified-firebase-installations-17.1.3/AndroidManifest.xml:19:17-82
+185            <meta-data
+185-->[com.google.firebase:firebase-datatransport:18.1.8] /Users/hazemdarwish/.gradle/caches/transforms-3/fcc651654630edc46277b9c1caf810ba/transformed/jetified-firebase-datatransport-18.1.8/AndroidManifest.xml:27:13-29:85
+186                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+186-->[com.google.firebase:firebase-datatransport:18.1.8] /Users/hazemdarwish/.gradle/caches/transforms-3/fcc651654630edc46277b9c1caf810ba/transformed/jetified-firebase-datatransport-18.1.8/AndroidManifest.xml:28:17-115
+187                android:value="com.google.firebase.components.ComponentRegistrar" />
+187-->[com.google.firebase:firebase-datatransport:18.1.8] /Users/hazemdarwish/.gradle/caches/transforms-3/fcc651654630edc46277b9c1caf810ba/transformed/jetified-firebase-datatransport-18.1.8/AndroidManifest.xml:29:17-82
+188            <meta-data
+188-->[com.google.firebase:firebase-common-ktx:20.3.3] /Users/hazemdarwish/.gradle/caches/transforms-3/c5b2544a4a80270dd93c56efc241382d/transformed/jetified-firebase-common-ktx-20.3.3/AndroidManifest.xml:14:13-16:85
+189                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+189-->[com.google.firebase:firebase-common-ktx:20.3.3] /Users/hazemdarwish/.gradle/caches/transforms-3/c5b2544a4a80270dd93c56efc241382d/transformed/jetified-firebase-common-ktx-20.3.3/AndroidManifest.xml:15:17-113
+190                android:value="com.google.firebase.components.ComponentRegistrar" />
+190-->[com.google.firebase:firebase-common-ktx:20.3.3] /Users/hazemdarwish/.gradle/caches/transforms-3/c5b2544a4a80270dd93c56efc241382d/transformed/jetified-firebase-common-ktx-20.3.3/AndroidManifest.xml:16:17-82
+191        </service>
+192
+193        <provider
+193-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:43:9-47:38
+194            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+194-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:44:13-102
+195            android:authorities="com.spotx.customer.flutterfirebasemessaginginitprovider"
+195-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:45:13-88
+196            android:exported="false"
+196-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:46:13-37
+197            android:initOrder="99" />
+197-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:47:13-35
+198
+199        <receiver
+199-->[:flutter_local_notifications] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-18:40
+200            android:name="com.dexterous.flutterlocalnotifications.ActionBroadcastReceiver"
+200-->[:flutter_local_notifications] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-91
+201            android:exported="false" />
+201-->[:flutter_local_notifications] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
+202        <receiver
+202-->[:flutter_local_notifications] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-21:40
+203            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+203-->[:flutter_local_notifications] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-97
+204            android:exported="false" />
+204-->[:flutter_local_notifications] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-37
+205        <receiver
+205-->[:flutter_local_notifications] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-31:20
+206            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+206-->[:flutter_local_notifications] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-101
+207            android:exported="false" >
+207-->[:flutter_local_notifications] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-37
+208            <intent-filter>
+208-->[:flutter_local_notifications] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-30:29
+209                <action android:name="android.intent.action.BOOT_COMPLETED" />
+209-->[:flutter_local_notifications] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:17-79
+209-->[:flutter_local_notifications] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:25-76
+210                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+210-->[:flutter_local_notifications] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:27:17-84
+210-->[:flutter_local_notifications] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:27:25-81
+211                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+211-->[:flutter_local_notifications] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:17-82
+211-->[:flutter_local_notifications] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:25-79
+212                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+212-->[:flutter_local_notifications] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-82
+212-->[:flutter_local_notifications] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:25-79
+213            </intent-filter>
+214        </receiver>
+215        <!--
+216           Declares a provider which allows us to store files to share in
+217           '.../caches/share_plus' and grant the receiving action access
+218        -->
+219        <provider
+219-->[:share_plus] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:15:9-23:20
+220            android:name="dev.fluttercommunity.plus.share.ShareFileProvider"
+220-->[:share_plus] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-77
+221            android:authorities="com.spotx.customer.flutter.share_provider"
+221-->[:share_plus] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-74
+222            android:exported="false"
+222-->[:share_plus] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
+223            android:grantUriPermissions="true" >
+223-->[:share_plus] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-47
+224            <meta-data
+224-->[:share_plus] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-22:68
+225                android:name="android.support.FILE_PROVIDER_PATHS"
+225-->[:share_plus] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:21:17-67
+226                android:resource="@xml/flutter_share_file_paths" />
+226-->[:share_plus] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-65
+227        </provider>
+228        <!--
+229           This manifest declared broadcast receiver allows us to use an explicit
+230           Intent when creating a PendingItent to be informed of the user's choice
+231        -->
+232        <receiver
+232-->[:share_plus] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:28:9-34:20
+233            android:name="dev.fluttercommunity.plus.share.SharePlusPendingIntent"
+233-->[:share_plus] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-82
+234            android:exported="false" >
+234-->[:share_plus] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-37
+235            <intent-filter>
+235-->[:share_plus] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:31:13-33:29
+236                <action android:name="EXTRA_CHOSEN_COMPONENT" />
+236-->[:share_plus] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:32:17-65
+236-->[:share_plus] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:32:25-62
+237            </intent-filter>
+238        </receiver>
+239
+240        <provider
+240-->[:image_picker_android] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
+241            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+241-->[:image_picker_android] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-82
+242            android:authorities="com.spotx.customer.flutter.image_provider"
+242-->[:image_picker_android] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-74
+243            android:exported="false"
+243-->[:image_picker_android] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+244            android:grantUriPermissions="true" >
+244-->[:image_picker_android] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
+245            <meta-data
+245-->[:share_plus] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-22:68
+246                android:name="android.support.FILE_PROVIDER_PATHS"
+246-->[:share_plus] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:21:17-67
+247                android:resource="@xml/flutter_image_picker_file_paths" />
+247-->[:share_plus] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-65
+248        </provider>
+249
+250        <activity
+250-->[:url_launcher_android] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-13:74
+251            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+251-->[:url_launcher_android] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-74
+252            android:exported="false"
+252-->[:url_launcher_android] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-37
+253            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+253-->[:url_launcher_android] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-71
+254
+255        <provider
+255-->[:open_filex] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-27:20
+256            android:name="com.crazecoder.openfile.FileProvider"
+256-->[:open_filex] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-64
+257            android:authorities="com.spotx.customer.fileProvider.com.crazecoder.openfile"
+257-->[:open_filex] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-88
+258            android:exported="false"
+258-->[:open_filex] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-37
+259            android:grantUriPermissions="true" >
+259-->[:open_filex] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-47
+260            <meta-data
+260-->[:share_plus] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-22:68
+261                android:name="android.support.FILE_PROVIDER_PATHS"
+261-->[:share_plus] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:21:17-67
+262                android:resource="@xml/filepaths" />
+262-->[:share_plus] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-65
+263        </provider> <!-- Needs to be explicitly declared on P+ -->
+264        <uses-library
+264-->[com.google.android.gms:play-services-maps:18.1.0] /Users/hazemdarwish/.gradle/caches/transforms-3/218d849205ad82a107818267ff7bc258/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:39:9-41:40
+265            android:name="org.apache.http.legacy"
+265-->[com.google.android.gms:play-services-maps:18.1.0] /Users/hazemdarwish/.gradle/caches/transforms-3/218d849205ad82a107818267ff7bc258/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:40:13-50
+266            android:required="false" />
+266-->[com.google.android.gms:play-services-maps:18.1.0] /Users/hazemdarwish/.gradle/caches/transforms-3/218d849205ad82a107818267ff7bc258/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:41:13-37
+267
+268        <receiver
+268-->[com.google.firebase:firebase-messaging:23.2.0] /Users/hazemdarwish/.gradle/caches/transforms-3/8acb8e549b943784e2f6f2617d666ca1/transformed/jetified-firebase-messaging-23.2.0/AndroidManifest.xml:31:9-38:20
+269            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+269-->[com.google.firebase:firebase-messaging:23.2.0] /Users/hazemdarwish/.gradle/caches/transforms-3/8acb8e549b943784e2f6f2617d666ca1/transformed/jetified-firebase-messaging-23.2.0/AndroidManifest.xml:32:13-78
+270            android:exported="true"
+270-->[com.google.firebase:firebase-messaging:23.2.0] /Users/hazemdarwish/.gradle/caches/transforms-3/8acb8e549b943784e2f6f2617d666ca1/transformed/jetified-firebase-messaging-23.2.0/AndroidManifest.xml:33:13-36
+271            android:permission="com.google.android.c2dm.permission.SEND" >
+271-->[com.google.firebase:firebase-messaging:23.2.0] /Users/hazemdarwish/.gradle/caches/transforms-3/8acb8e549b943784e2f6f2617d666ca1/transformed/jetified-firebase-messaging-23.2.0/AndroidManifest.xml:34:13-73
+272            <intent-filter>
+272-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:32:13-34:29
+273                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+273-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:17-81
+273-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:25-78
+274            </intent-filter>
+275        </receiver>
+276        <!--
+277             FirebaseMessagingService performs security checks at runtime,
+278             but set to not exported to explicitly avoid allowing another app to call it.
+279        -->
+280        <service
+280-->[com.google.firebase:firebase-messaging:23.2.0] /Users/hazemdarwish/.gradle/caches/transforms-3/8acb8e549b943784e2f6f2617d666ca1/transformed/jetified-firebase-messaging-23.2.0/AndroidManifest.xml:44:9-51:19
+281            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+281-->[com.google.firebase:firebase-messaging:23.2.0] /Users/hazemdarwish/.gradle/caches/transforms-3/8acb8e549b943784e2f6f2617d666ca1/transformed/jetified-firebase-messaging-23.2.0/AndroidManifest.xml:45:13-82
+282            android:directBootAware="true"
+282-->[com.google.firebase:firebase-messaging:23.2.0] /Users/hazemdarwish/.gradle/caches/transforms-3/8acb8e549b943784e2f6f2617d666ca1/transformed/jetified-firebase-messaging-23.2.0/AndroidManifest.xml:46:13-43
+283            android:exported="false" >
+283-->[com.google.firebase:firebase-messaging:23.2.0] /Users/hazemdarwish/.gradle/caches/transforms-3/8acb8e549b943784e2f6f2617d666ca1/transformed/jetified-firebase-messaging-23.2.0/AndroidManifest.xml:47:13-37
+284            <intent-filter android:priority="-500" >
+284-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-25:29
+285                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+285-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:17-78
+285-->[:firebase_messaging] /Users/hazemdarwish/AndroidStudioProjects/spotx_mobile/apps/customer/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:25-75
+286            </intent-filter>
+287        </service>
+288
+289        <activity
+289-->[com.google.android.gms:play-services-base:18.0.1] /Users/hazemdarwish/.gradle/caches/transforms-3/d5ae9d72ad191385f679154c15300483/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+290            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+290-->[com.google.android.gms:play-services-base:18.0.1] /Users/hazemdarwish/.gradle/caches/transforms-3/d5ae9d72ad191385f679154c15300483/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+291            android:exported="false"
+291-->[com.google.android.gms:play-services-base:18.0.1] /Users/hazemdarwish/.gradle/caches/transforms-3/d5ae9d72ad191385f679154c15300483/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+292            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+292-->[com.google.android.gms:play-services-base:18.0.1] /Users/hazemdarwish/.gradle/caches/transforms-3/d5ae9d72ad191385f679154c15300483/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+293
+294        <provider
+294-->[com.google.firebase:firebase-common:20.3.3] /Users/hazemdarwish/.gradle/caches/transforms-3/0b80c6f5e8782930c2fbfdf393edc96d/transformed/jetified-firebase-common-20.3.3/AndroidManifest.xml:25:9-30:39
+295            android:name="com.google.firebase.provider.FirebaseInitProvider"
+295-->[com.google.firebase:firebase-common:20.3.3] /Users/hazemdarwish/.gradle/caches/transforms-3/0b80c6f5e8782930c2fbfdf393edc96d/transformed/jetified-firebase-common-20.3.3/AndroidManifest.xml:26:13-77
+296            android:authorities="com.spotx.customer.firebaseinitprovider"
+296-->[com.google.firebase:firebase-common:20.3.3] /Users/hazemdarwish/.gradle/caches/transforms-3/0b80c6f5e8782930c2fbfdf393edc96d/transformed/jetified-firebase-common-20.3.3/AndroidManifest.xml:27:13-72
+297            android:directBootAware="true"
+297-->[com.google.firebase:firebase-common:20.3.3] /Users/hazemdarwish/.gradle/caches/transforms-3/0b80c6f5e8782930c2fbfdf393edc96d/transformed/jetified-firebase-common-20.3.3/AndroidManifest.xml:28:13-43
+298            android:exported="false"
+298-->[com.google.firebase:firebase-common:20.3.3] /Users/hazemdarwish/.gradle/caches/transforms-3/0b80c6f5e8782930c2fbfdf393edc96d/transformed/jetified-firebase-common-20.3.3/AndroidManifest.xml:29:13-37
+299            android:initOrder="100" />
+299-->[com.google.firebase:firebase-common:20.3.3] /Users/hazemdarwish/.gradle/caches/transforms-3/0b80c6f5e8782930c2fbfdf393edc96d/transformed/jetified-firebase-common-20.3.3/AndroidManifest.xml:30:13-36
+300
+301        <receiver
+301-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/2fd07490b971207c05bddfea458ab763/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:29:9-33:20
+302            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+302-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/2fd07490b971207c05bddfea458ab763/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:30:13-85
+303            android:enabled="true"
+303-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/2fd07490b971207c05bddfea458ab763/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:31:13-35
+304            android:exported="false" >
+304-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/2fd07490b971207c05bddfea458ab763/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:32:13-37
+305        </receiver>
+306
+307        <service
+307-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/2fd07490b971207c05bddfea458ab763/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:35:9-38:40
+308            android:name="com.google.android.gms.measurement.AppMeasurementService"
+308-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/2fd07490b971207c05bddfea458ab763/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:36:13-84
+309            android:enabled="true"
+309-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/2fd07490b971207c05bddfea458ab763/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:37:13-35
+310            android:exported="false" />
+310-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/2fd07490b971207c05bddfea458ab763/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:38:13-37
+311        <service
+311-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/2fd07490b971207c05bddfea458ab763/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:39:9-43:72
+312            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+312-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/2fd07490b971207c05bddfea458ab763/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:40:13-87
+313            android:enabled="true"
+313-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/2fd07490b971207c05bddfea458ab763/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:41:13-35
+314            android:exported="false"
+314-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/2fd07490b971207c05bddfea458ab763/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:42:13-37
+315            android:permission="android.permission.BIND_JOB_SERVICE" />
+315-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/2fd07490b971207c05bddfea458ab763/transformed/jetified-play-services-measurement-21.3.0/AndroidManifest.xml:43:13-69
+316
+317        <meta-data
+317-->[com.google.android.gms:play-services-basement:18.1.0] /Users/hazemdarwish/.gradle/caches/transforms-3/1507d80031881b5b6c74fc7f00fe4765/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+318            android:name="com.google.android.gms.version"
+318-->[com.google.android.gms:play-services-basement:18.1.0] /Users/hazemdarwish/.gradle/caches/transforms-3/1507d80031881b5b6c74fc7f00fe4765/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+319            android:value="@integer/google_play_services_version" />
+319-->[com.google.android.gms:play-services-basement:18.1.0] /Users/hazemdarwish/.gradle/caches/transforms-3/1507d80031881b5b6c74fc7f00fe4765/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+320
+321        <uses-library
+321-->[androidx.window:window:1.0.0-beta04] /Users/hazemdarwish/.gradle/caches/transforms-3/958d0d5d775370d38c6b793b6dc6128c/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+322            android:name="androidx.window.extensions"
+322-->[androidx.window:window:1.0.0-beta04] /Users/hazemdarwish/.gradle/caches/transforms-3/958d0d5d775370d38c6b793b6dc6128c/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+323            android:required="false" />
+323-->[androidx.window:window:1.0.0-beta04] /Users/hazemdarwish/.gradle/caches/transforms-3/958d0d5d775370d38c6b793b6dc6128c/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+324        <uses-library
+324-->[androidx.window:window:1.0.0-beta04] /Users/hazemdarwish/.gradle/caches/transforms-3/958d0d5d775370d38c6b793b6dc6128c/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+325            android:name="androidx.window.sidecar"
+325-->[androidx.window:window:1.0.0-beta04] /Users/hazemdarwish/.gradle/caches/transforms-3/958d0d5d775370d38c6b793b6dc6128c/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+326            android:required="false" />
+326-->[androidx.window:window:1.0.0-beta04] /Users/hazemdarwish/.gradle/caches/transforms-3/958d0d5d775370d38c6b793b6dc6128c/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+327
+328        <service
+328-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/hazemdarwish/.gradle/caches/transforms-3/dc695833fd31db59f4b7c894788dcb23/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:28:9-34:19
+329            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+329-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/hazemdarwish/.gradle/caches/transforms-3/dc695833fd31db59f4b7c894788dcb23/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:29:13-103
+330            android:exported="false" >
+330-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/hazemdarwish/.gradle/caches/transforms-3/dc695833fd31db59f4b7c894788dcb23/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:30:13-37
+331            <meta-data
+331-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/hazemdarwish/.gradle/caches/transforms-3/dc695833fd31db59f4b7c894788dcb23/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:31:13-33:39
+332                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+332-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/hazemdarwish/.gradle/caches/transforms-3/dc695833fd31db59f4b7c894788dcb23/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:32:17-94
+333                android:value="cct" />
+333-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/hazemdarwish/.gradle/caches/transforms-3/dc695833fd31db59f4b7c894788dcb23/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:33:17-36
+334        </service>
+335
+336        <provider
+336-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/f7a8a508aca29bee89bac0274ffb11e0/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+337            android:name="androidx.startup.InitializationProvider"
+337-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/f7a8a508aca29bee89bac0274ffb11e0/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:25:13-67
+338            android:authorities="com.spotx.customer.androidx-startup"
+338-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/f7a8a508aca29bee89bac0274ffb11e0/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:26:13-68
+339            android:exported="false" >
+339-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/f7a8a508aca29bee89bac0274ffb11e0/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:27:13-37
+340            <meta-data
+340-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/f7a8a508aca29bee89bac0274ffb11e0/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+341                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+341-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/f7a8a508aca29bee89bac0274ffb11e0/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+342                android:value="androidx.startup" />
+342-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/f7a8a508aca29bee89bac0274ffb11e0/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+343        </provider>
+344
+345        <receiver
+345-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/f7a8a508aca29bee89bac0274ffb11e0/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+346            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+346-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/f7a8a508aca29bee89bac0274ffb11e0/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+347            android:directBootAware="false"
+347-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/f7a8a508aca29bee89bac0274ffb11e0/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+348            android:enabled="true"
+348-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/f7a8a508aca29bee89bac0274ffb11e0/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+349            android:exported="true"
+349-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/f7a8a508aca29bee89bac0274ffb11e0/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+350            android:permission="android.permission.DUMP" >
+350-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/f7a8a508aca29bee89bac0274ffb11e0/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+351            <intent-filter>
+351-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/f7a8a508aca29bee89bac0274ffb11e0/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+352                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+352-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/f7a8a508aca29bee89bac0274ffb11e0/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+352-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/f7a8a508aca29bee89bac0274ffb11e0/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+353            </intent-filter>
+354            <intent-filter>
+354-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/f7a8a508aca29bee89bac0274ffb11e0/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+355                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+355-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/f7a8a508aca29bee89bac0274ffb11e0/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+355-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/f7a8a508aca29bee89bac0274ffb11e0/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+356            </intent-filter>
+357            <intent-filter>
+357-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/f7a8a508aca29bee89bac0274ffb11e0/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+358                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+358-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/f7a8a508aca29bee89bac0274ffb11e0/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+358-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/f7a8a508aca29bee89bac0274ffb11e0/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+359            </intent-filter>
+360            <intent-filter>
+360-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/f7a8a508aca29bee89bac0274ffb11e0/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+361                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+361-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/f7a8a508aca29bee89bac0274ffb11e0/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+361-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/hazemdarwish/.gradle/caches/transforms-3/f7a8a508aca29bee89bac0274ffb11e0/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+362            </intent-filter>
+363        </receiver>
+364
+365        <service
+365-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/hazemdarwish/.gradle/caches/transforms-3/5c617aab58a09520c0837ee84cb4d4c0/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:26:9-30:19
+366            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+366-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/hazemdarwish/.gradle/caches/transforms-3/5c617aab58a09520c0837ee84cb4d4c0/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:27:13-117
+367            android:exported="false"
+367-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/hazemdarwish/.gradle/caches/transforms-3/5c617aab58a09520c0837ee84cb4d4c0/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:28:13-37
+368            android:permission="android.permission.BIND_JOB_SERVICE" >
+368-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/hazemdarwish/.gradle/caches/transforms-3/5c617aab58a09520c0837ee84cb4d4c0/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:29:13-69
+369        </service>
+370
+371        <receiver
+371-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/hazemdarwish/.gradle/caches/transforms-3/5c617aab58a09520c0837ee84cb4d4c0/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:32:9-34:40
+372            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+372-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/hazemdarwish/.gradle/caches/transforms-3/5c617aab58a09520c0837ee84cb4d4c0/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:33:13-132
+373            android:exported="false" />
+373-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/hazemdarwish/.gradle/caches/transforms-3/5c617aab58a09520c0837ee84cb4d4c0/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:34:13-37
+374    </application>
+375
+376</manifest>
