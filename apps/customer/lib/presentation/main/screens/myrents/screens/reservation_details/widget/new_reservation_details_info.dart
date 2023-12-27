@@ -1,0 +1,204 @@
+import 'package:easy_localization/easy_localization.dart';
+import 'package:flutter/material.dart';
+import 'package:spotx/data/remote/reservation/model/reservation_summary_entity.dart';
+import 'package:spotx/generated/locale_keys.g.dart';
+import 'package:spotx/presentation/main/screens/home/screens/unit_details/screens/calender/widget/price_widget.dart';
+import 'package:spotx/utils/images.dart';
+import 'package:spotx/utils/style/theme.dart';
+import 'package:spotx/utils/utils.dart';
+
+class NewReservationDetailsInfoWidget extends StatelessWidget {
+  const NewReservationDetailsInfoWidget(
+      {Key? key,
+        required this.fromDate,
+        required this.toDate,
+        required this.daysCount,
+        required this.reservationSummary,
+        this.checkOut,
+        this.checkIn})
+      : super(key: key);
+
+  final DateTime fromDate;
+  final DateTime toDate;
+  final int daysCount;
+  final ReservationSummaryEntity reservationSummary;
+  final String? checkIn;
+  final String? checkOut;
+
+  @override
+  Widget build(BuildContext context) {
+      final isDiscount =  reservationSummary.discount != 0;
+      return Container(
+      margin: const EdgeInsetsDirectional.only(top: 17, start: 24, end: 24),
+      width: MediaQuery.of(context).size.width,
+      decoration: BoxDecoration(
+        color: Theme.of(context).backgroundColor,
+        borderRadius: const BorderRadius.all(Radius.circular(15)),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                GestureDetector(
+                  child: Container(
+                    decoration: BoxDecoration(
+                        borderRadius: const BorderRadius.all(Radius.circular(12)),
+                        border: Border.all(color: Theme.of(context).dialogBackgroundColor),
+                        color: Colors.transparent),
+                    alignment: Alignment.center,
+                    width: 42,
+                    height: 42,
+                    child: Image.asset(calenderIconPath, color: kWhite),
+                  ),
+                  onTap: () {},
+                ),
+                const SizedBox(
+                  width: 10,
+                ),
+                Expanded(
+                  flex: 3,
+                  child: Wrap(
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                LocaleKeys.reservationDate.tr(),
+                                style: circularMedium(color: kWhite, fontSize: 15),
+                              ),
+                              Text(
+                                "$daysCount ${LocaleKeys.nights.tr()}",
+                                style: circularMedium(color: kWhite, fontSize: 14),
+                              )
+                            ],
+                          ),
+                          const SizedBox(height: 10),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "${LocaleKeys.from.tr()} ${getDateFormat(fromDate, context)}",
+                                style: circularBook(
+                                    color: Theme.of(context).hintColor,
+                                    fontSize: 13),
+                              ),
+                              if (checkIn != null)
+                                Text(
+                                  parseTime(checkIn).format(context),
+                                  style: circularBook(
+                                      color: Theme.of(context).hintColor,
+                                      fontSize: 13),
+                                ),
+                            ],
+                          ),
+                          const SizedBox(height: 10),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "${LocaleKeys.to.tr()} ${getDateFormat(toDate, context)}",
+                                style: circularBook(
+                                    color: Theme.of(context).hintColor,
+                                    fontSize: 13),
+                              ),
+                              if (checkOut != null)
+                                Text(
+                                  parseTime(checkOut).format(context),
+                                  style: circularBook(
+                                      color: Theme.of(context).hintColor,
+                                      fontSize: 13),
+                                )
+                            ],
+                          )
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            Container(
+              margin: const EdgeInsetsDirectional.only(top: 20, bottom: 20),
+              height: 1,
+              color: Theme.of(context).disabledColor,
+            ),
+            Row(
+              crossAxisAlignment:  isDiscount ?  CrossAxisAlignment.start:  CrossAxisAlignment.center,
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                      borderRadius: const BorderRadius.all(Radius.circular(12)),
+                      border: Border.all(color: Theme.of(context).dialogBackgroundColor),
+                      color: Colors.transparent),
+                  alignment: Alignment.center,
+                  width: 42,
+                  height: 42,
+                  child: Image.asset(priceIconPath, color: kWhite),
+                ),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: Column(
+                    children: [
+                      if (isDiscount)  PriceWidget(
+                        price: reservationSummary.totalPrice.toString(),
+                        title: LocaleKeys.price.tr(),
+                        titleStyle: circularBook(
+                          color: Theme.of(context).hintColor,
+                          fontSize: 13,
+                        ),
+                        valueStyle: circularBook(
+                          color: Theme.of(context).hintColor,
+                          fontSize: 13,
+                        ),
+                      ),
+                      if (isDiscount)
+                        Padding(
+                          padding: const EdgeInsets.only(top: 8),
+                          child: PriceWidget(
+                            price: "-${reservationSummary.discount}",
+                            title:
+                                '${LocaleKeys.companyDiscount.tr()} ${(((reservationSummary.discount ?? 0) / (reservationSummary.totalPrice ?? 0)) * 100).toInt()}%',
+                            titleStyle: circularBook(
+                              color: Theme.of(context).hintColor,
+                              fontSize: 13,
+                            ),
+                            valueStyle:
+                            circularBook(
+                              color: Theme.of(context).hintColor,
+                              fontSize: 13,
+                            ),
+                          ),
+                        ),
+                      if (isDiscount) Container(
+                        margin: const EdgeInsetsDirectional.only(top: 5, bottom: 9),
+                        height: 1,
+                        color: Theme.of(context).disabledColor,
+                      ),
+                      PriceWidget(
+                        price: reservationSummary.subTotal.toString(),
+                        title: LocaleKeys.totalCost.tr(),
+                        titleStyle: circularMedium(color: kWhite, fontSize: 15),
+                        valueStyle: circularMedium(color: kWhite, fontSize: 15),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            )
+          ],
+        ),
+      ),
+    );
+  }
+
+  String getDateFormat(DateTime date, BuildContext context) {
+    return DateFormat.MMMEd(context.locale.languageCode).format(date);
+  }
+}
